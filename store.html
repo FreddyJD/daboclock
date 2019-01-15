@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Store | Daboclock.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="includes/styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="includes/java/firebase.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light pt-4" style="background-color: white;">
+    <a class="navbar-brand"></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"> Store </a>
+            </li>
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"> Leaderboard </a>
+            </li>
+            <li class="nav-item ml-5">
+            </li>
+        </ul>
+        <button class="btn btn-success">Log-in</button>
+    </div>
+</nav>
+
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="includes/styles/store.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">Store </h1>
+                <div class="col-md-12 ">
+                    <h3 class="fontfy"> Our players already cashed <span style="font-weight: bold;">1283</span> tokens
+                        <br> on our store, start earning today! </h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+<body>
+    <!-- 
+        This is the vector background
+        <div class="jumbotron">
+            <br>
+        </div>
+    -->
+
+
+    <!-- Content start here -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Our items</h2>
+                <hr> <br>
+                <div class="row">
+                    <div class="card-deck mb-3 text-center">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Evolve Wax Pen</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="https://kushfly.com/wp-content/uploads/2017/04/Evolve-Wax-Pen-PLUS_gear_Delivery_LosAngeles_California_2_n.jpg?x10084"
+                                    class="preview-right" alt="">
+                                <ul class="fa-ul list-unstyled text-left">
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> 15-second battery safety
+                                        cut-off</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Built-in Silicone Jar
+                                        (NEW)</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Unit dimensions: 120mm *
+                                        19mm</li>
+
+
+                                </ul>
+                                <a href="#">
+                                    <button type="button" class="btn btn-success">812 Tokens</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Pax Era Battery</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="https://kushfly.com/wp-content/uploads/2017/08/pax-era-premium-vaporizer-battery_gear_Delivery_LosAngeles_California_6_n_2.jpg?x10084"
+                                    class="preview-right" alt="">
+                                <ul class="fa-ul list-unstyled text-left">
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> 15-second battery safety
+                                        cut-off</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Built-in Silicone Jar
+                                        (NEW)</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Unit dimensions: 120mm *
+                                        19mm</li>
+                                </ul>
+                                <a href="#">
+                                    <button type="button" class="btn btn-success">123 Tokens</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Glass Pipes</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="https://kushfly.com/wp-content/uploads/2018/06/firsttimepipe.jpg" class="preview-right"
+                                    alt="">
+                                <ul class="fa-ul list-unstyled text-left">
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> 15-second battery safety
+                                        cut-off</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Built-in Silicone Jar
+                                        (NEW)</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Unit dimensions: 120mm *
+                                        19mm</li>
+
+                                </ul>
+                                <a href="#">
+                                    <button type="button" class="btn btn-success">123 Tokens</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container spacd">
+        <div class="row">
+            <div class="col-md-8 text-right">
+                <h3 class="fontfy" style="font-weight:bold"> Need more tokens? </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Officia molestiae quae id mollitia
+                    amet,
+                    nisi voluptates </p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">100
+                    Tokens ➗ USD </button>
+
+
+            </div>
+            <div class="col-md-4">
+                <img src="img/cashout.svg" class="preview-right">
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="footer spacd-footer">
+    <div class="container text-center">
+        <p>Website made with ❤️ for this community </p>
+        <a href="">Home</a> |
+        <a href="">Leaderboard</a> |
+        <a href="">Store</a>
+    </div>
+</footer>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Need more tokens? </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3 class="fontfy" style="font-weight:bold"> 🔥 100 Tokens</h3>
+                <ul class="fa-ul list-unstyled text-left">
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> 100+ Tokens bonus </li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Instant activation </li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Works with your score </li>
+                </ul>
+                <form action="your-server-side-code" method="POST">
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+                        data-amount="999" data-name="Stripe.com" data-description="Example charge" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto" data-zip-code="true">
+                        </script>
+                </form>
+                <hr>
+                <h3 class="fontfy" style="font-weight:bold"> 🐵 500 Tokens</h3>
+                <ul class="fa-ul list-unstyled text-left">
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> 150+ Tokens bonus </li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Instant activation </li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Works with your score </li>
+                </ul>
+                <form action="your-server-side-code" method="POST">
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+                        data-amount="999" data-name="Stripe.com" data-description="Example charge" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto" data-zip-code="true">
+                        </script>
+                </form>
+                <hr>
+                <h3 class="fontfy" style="font-weight:bold"> 🤑 1000 Tokens</h3>
+                <ul class="fa-ul list-unstyled text-left">
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> 800+ Tokens bonus </li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Instant activation </li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Works with your score </li>
+                </ul>
+                <form action="your-server-side-code" method="POST">
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+                        data-amount="999" data-name="Stripe.com" data-description="Example charge" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto" data-zip-code="true">
+                        </script>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="includes/scripts/database.js"></script>
+<script src="includes/scripts/app.js"></script>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page | Daboclock.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="includes/styles/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="includes/java/firebase.js"></script>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light pt-4" style="background-color: white;">
+    <a class="navbar-brand"></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"> Store </a>
+            </li>
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"> Leaderboard </a>
+            </li>
+            <li class="nav-item ml-5">
+            </li>
+        </ul>
+        <button class="btn btn-success">Log-in</button>
+    </div>
+</nav>
+
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="includes/styles/custom.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">DABoCLOCK</h1>
+                <div class="col-md-12 ">
+                    <span class="dot align-items-center text-center">
+                        <h2>HEAT <br>IT UP<br><span id="heatTime">00:30</span></h2>
+                    </span>
+                    <span class="dot align-items-center text-center">
+                        <h2>COOL <br>DOWN<br><span id="coolTime">00:90</span></h2>
+                    </span>
+                </div>
+
+                <div class="row">
+                    <div class="container">
+                        <div class="align-items-center text-center">
+                            <button type="button" id="start" class="btn btn-success">Start </button>
+                            <button type="button" id="restart" class="btn btn-primary">Reset</button>
+                            <button type="button" class="btn btn-primary">Scores</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <!-- 
+        This is the vector background
+        <div class="jumbotron">
+            <br>
+        </div>
+    -->
+
+
+    <!-- Content start here -->
+    <div class="container spacd">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/draw_vector_1.svg" class="preview">
+            </div>
+            <div class="col-md-8">
+                <h2>🔥 Win Tokens!</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia molestiae quae id mollitia amet,
+                    nisi voluptates odit facilis sit earum totam doloremque dolor consectetur! Eum optio quas quidem
+                    voluptate molestias!</p>
+                <p>Total tokens won by players <span style="font-weight: bold;">35821</span></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container spacd">
+        <div class="row">
+            <div class="col-md-8 text-right">
+                <h2>Leaderboards!</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia molestiae quae id mollitia amet,
+                    nisi voluptates odit facilis sit earum totam doloremque dolor consectetur! Eum optio quas quidem
+                    voluptate molestias!</p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="img/happy_vector.svg" class="preview-right">
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container spacd">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/compete_1.svg" class="preview-right">
+            </div>
+            <div class="col-md-8">
+                <h2>Fly with us! 🚀 </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia molestiae quae id mollitia amet,
+                    nisi voluptates odit facilis sit earum totam doloremque dolor consectetur! Eum optio quas quidem
+                    voluptate molestias!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer class="footer spacd-footer">
+    <div class="container text-center">
+        <p>Website made with ❤️ for this community </p>
+        <a href="">Home</a> |
+        <a href="">Leaderboard</a> |
+        <a href="">Store</a>
+    </div>
+</footer>
+<script src="includes/scripts/database.js"></script>
+<script src="includes/scripts/app.js"></script>
+
+</html>
